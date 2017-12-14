@@ -21,12 +21,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //测试
     
+    //按钮的渐变颜色数组
     NSMutableArray *colorArray = [@[[UIColor colorWithRed:0.3 green:0.278 blue:0.957 alpha:1],[UIColor colorWithRed:0.114 green:0.612 blue:0.843 alpha:1]] mutableCopy];
     XMColorButton *button = [[XMColorButton alloc] initWithFrame:CGRectMake(100, 100, 200, 50) FromColorArray:colorArray ByGradientType:uprightTolowLeft cornerRadiu:20];
     
     [button setTitle:@"晚餐" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     
     //加阴影效果
     CALayer *layer = [CALayer layer];
@@ -45,6 +46,9 @@
     
 }
 
+- (void)click {
+    NSLog(@"button click");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
