@@ -4,7 +4,8 @@
 ## 参考用例
 
 在使用的地方
-    
+
+```
     NSMutableArray *colorArray = [@[[UIColor colorWithRed:0.3 green:0.278 blue:0.957 alpha:1], [UIColor colorWithRed:0.114 green:0.612 blue:0.843 alpha:1]] mutableCopy];
     XMColorButton *button = [[XMColorButton alloc] initWithFrame:CGRectMake(100, 100, 200, 50) FromColorArray:colorArray ByGradientType:uprightTolowLeft cornerRadiu:20]; 
     [button setTitle:@" 晚餐 " forState:UIControlStateNormal];
@@ -21,6 +22,8 @@
     // 这里 self 表示当前自定义的 view
     [self.view.layer addSublayer:layer];
     [self.view addSubview:button];
+    
+```
 
 
 ## 参考图片
