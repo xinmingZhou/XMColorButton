@@ -24,4 +24,4 @@
 
 
 ## 参考图片
-![image](https://github.com/XinMingZhou/XMColorButton/blob/master/colorButton.png){width="50%" height="50%"}
+![image](https://github.com/XinMingZhou/XMColorButton/blob/master/colorButton.png)
